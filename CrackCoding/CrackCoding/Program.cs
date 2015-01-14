@@ -6,14 +6,18 @@ namespace CrackCoding
 	{
 		public static void Main (string[] args)
 		{
-			Console.WriteLine ("Please Input A String:");
+			Console.WriteLine ("Please Input A String1:");
 
-			string testString;
-			testString = Console.ReadLine ();
+			string testString1;
+			testString1 = Console.ReadLine ();
 
-			string reverseString = _1_2.Reverse (testString);
+			Console.WriteLine ("Please Input A String2:");
+			string testString2;
+			testString2 = Console.ReadLine ();
 
-			Console.WriteLine (reverseString);
+			bool canResort = _1_3.CanReSort (testString1, testString2);
+
+			Console.WriteLine (canResort.ToString ());
 
 		}
 	}
