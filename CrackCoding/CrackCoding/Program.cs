@@ -11,9 +11,10 @@ namespace CrackCoding
 			string testString;
 			testString = Console.ReadLine ();
 
-			bool isAllDifferent = CrackCoding._1_1.IsAllDifferent (testString);
+			string reverseString = _1_2.Reverse (testString);
 
-			Console.WriteLine (isAllDifferent.ToString ());
+			Console.WriteLine (reverseString);
+
 		}
 	}
 }
