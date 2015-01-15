@@ -41,6 +41,7 @@
     <Compile Include="_1_4.cs" />
     <Compile Include="_1_5.cs" />
     <Compile Include="_1_6.cs" />
+    <Compile Include="_1_7.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

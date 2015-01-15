@@ -15,15 +15,14 @@ namespace CrackCoding
 //
 //			Console.WriteLine (testString2.ToString ());
 
-			int[,] matrix = new int[5,5] {
+			int[,] matrix = new int[4,5] {
 				{1,2,3,4,5},
-				{5,4,3,2,1},
-				{6,7,8,9,0},
+				{5,4,0,2,1},
+				{6,7,8,9,10},
 				{0,9,8,7,6},
-				{10,11,12,13,14}
 			};
 
-			int[,] rotatedMap = _1_6.RotateMatrix (matrix, 5);
+			int[,] rotatedMap = _1_7.CleanZeroMatrix (matrix,4,5);
 
 			Console.WriteLine (rotatedMap.ToString ());
 		}
