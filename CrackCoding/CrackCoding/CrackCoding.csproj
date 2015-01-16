@@ -45,6 +45,9 @@
     <Compile Include="Node.cs" />
     <Compile Include="_2_1.cs" />
     <Compile Include="_2_2.cs" />
+    <Compile Include="_2_4.cs" />
+    <Compile Include="_2_3.cs" />
+    <Compile Include="_2_5.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

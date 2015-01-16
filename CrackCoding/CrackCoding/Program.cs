@@ -18,7 +18,6 @@ namespace CrackCoding
 			node3.Next = node4;
 
 			Node node5 = new Node (5);
-			node4.Next = node5;
 
 			Node node6 = new Node (6);
 			node5.Next = node6;
@@ -26,9 +25,12 @@ namespace CrackCoding
 			Node node7 = new Node (1);
 			node6.Next = node7;
 	
-			Node node = _2_2.FindNodeInList (node1, 3);
+			Node node = _2_5.AddNodeList(node1, node5);
 
-			Console.WriteLine (node.Data);
+			while (node != null) {
+				Console.WriteLine (node.Data);
+				node = node.Next;
+			}
 		}
 	}
 }
