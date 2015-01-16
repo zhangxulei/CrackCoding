@@ -15,16 +15,33 @@ namespace CrackCoding
 //
 //			Console.WriteLine (testString2.ToString ());
 
-			int[,] matrix = new int[4,5] {
-				{1,2,3,4,5},
-				{5,4,0,2,1},
-				{6,7,8,9,10},
-				{0,9,8,7,6},
-			};
+			Node node1 = new Node (1);
 
-			int[,] rotatedMap = _1_7.CleanZeroMatrix (matrix,4,5);
+			Node node2 = new Node (2);
+			node1.Next = node2;
 
-			Console.WriteLine (rotatedMap.ToString ());
+			Node node3 = new Node (3);
+			node2.Next = node3;
+
+			Node node4 = new Node (2);
+			node3.Next = node4;
+
+			Node node5 = new Node (5);
+			node4.Next = node5;
+
+			Node node6 = new Node (6);
+			node5.Next = node6;
+
+			Node node7 = new Node (1);
+			node6.Next = node7;
+		
+			_2_1.RemoveDuplicateNode (node1);
+
+			Node node = node1;
+			while (node!=null) {
+				Console.WriteLine (node.Data);
+				node = node.Next;
+			}
 		}
 	}
 }

@@ -14,9 +14,8 @@ namespace CrackCoding
 			int firstIndex = 0;
 			int lastIndex = str.Length - 1;
 
-			System.Text.StringBuilder strBuilder = new System.Text.StringBuilder (str);
+			StringBuilder strBuilder = new StringBuilder (str);
 
-		
 			while (firstIndex < lastIndex) {
 				char temp = str [firstIndex];
 
