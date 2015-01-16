@@ -6,15 +6,6 @@ namespace CrackCoding
 	{
 		public static void Main (string[] args)
 		{
-//			Console.WriteLine ("Please Input A String:");
-//
-//			string testString1;
-//			testString1 = Console.ReadLine ();
-//		    
-//			string testString2 = _1_5.CompressString(testString1);
-//
-//			Console.WriteLine (testString2.ToString ());
-
 			Node node1 = new Node (1);
 
 			Node node2 = new Node (2);
@@ -34,14 +25,10 @@ namespace CrackCoding
 
 			Node node7 = new Node (1);
 			node6.Next = node7;
-		
-			_2_1.RemoveDuplicateNode (node1);
+	
+			Node node = _2_2.FindNodeInList (node1, 3);
 
-			Node node = node1;
-			while (node!=null) {
-				Console.WriteLine (node.Data);
-				node = node.Next;
-			}
+			Console.WriteLine (node.Data);
 		}
 	}
 }
