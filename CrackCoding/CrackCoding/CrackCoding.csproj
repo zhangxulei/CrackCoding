@@ -51,6 +51,7 @@
     <Compile Include="_2_5.cs" />
     <Compile Include="_9_1.cs" />
     <Compile Include="_9_2.cs" />
+    <Compile Include="_9_3.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
