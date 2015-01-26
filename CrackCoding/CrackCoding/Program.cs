@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Windows.Forms.DataVisualization.Charting;
+using System.Collections.Generic;
 
 namespace CrackCoding
 {
@@ -6,30 +8,16 @@ namespace CrackCoding
 	{
 		public static void Main (string[] args)
 		{
-			Node node1 = new Node (1);
+			int x = 2;
+			int y = 2;
 
-			Node node2 = new Node (2);
-			node1.Next = node2;
+			Point3D pt = new Point3D (0, 0, 0);
+			List<Point3D> path = new List<Point3D> ();
 
-			Node node3 = new Node (3);
-			node2.Next = node3;
+			int count = _9_2.MoveCounts (x, y, pt, path);
 
-			Node node4 = new Node (2);
-			node3.Next = node4;
-
-			Node node5 = new Node (5);
-
-			Node node6 = new Node (6);
-			node5.Next = node6;
-
-			Node node7 = new Node (1);
-			node6.Next = node7;
-	
-			Node node = _2_5.AddNodeList(node1, node5);
-
-			while (node != null) {
-				Console.WriteLine (node.Data);
-				node = node.Next;
+			foreach (var pathPt in path) {
+				Console.WriteLine (pathPt.X.ToString () + "," + pathPt.Y.ToString ());
 			}
 		}
 	}
